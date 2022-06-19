@@ -1,33 +1,21 @@
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-int gcd(int a, int b) {
-
-    if(a==0)
-    return b;
-
-    if(b==0)
-    return a;
-
-    while(a!=0 && b!=0) {
-
-        if(a>b)
-        {
-            a = a-b;
-        }
-        else{
-            b = b-a;
-        }
-    }
-    return a;
+void praveen(){
+  #ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+  #endif
 }
 
-int main() {
-    int a,b;
-    cout << "Enter the Values of a and b" << endl;
-    cin >> a >> b;
-    int ans = gcd(a,b);
-    cout << " The GCD of " << a << " & " << b << " is: " << ans << endl;
-
+int main()
+{
+  praveen();
+  int t;
+  cin >> t;
+  while (t--)
+  {
+    
+  }
     return 0;
 }
